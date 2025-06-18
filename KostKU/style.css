@@ -72,6 +72,11 @@ nav a {
     width: 100%;
 }
 
+/* Tentang Kami */
+.container h2 {
+    text-align: center;
+}
+
 /* Masuk */
 
 .modal {
@@ -81,10 +86,8 @@ nav a {
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             width: 300px;
             text-align: center;
-            justify-content: center;
-            
-            
         }
+        
 .modal h2 {
             margin: 0 0 20px;
         }
