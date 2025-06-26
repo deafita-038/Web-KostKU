@@ -73,8 +73,13 @@ nav a {
 }
 
 /* Tentang Kami */
+
 .container h2 {
     text-align: center;
+}
+
+.container p {
+    text-align: justify;
 }
 
 /* Masuk */
