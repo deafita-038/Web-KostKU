@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MASUK - KostKU</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
         <header>
@@ -19,22 +20,32 @@
                 </ul>
             </nav>
         </header>
-    <div class="modal">
-        <h2>Masuk KostKU</h2>
-        <p>Saya ingin masuk sebagai</p>
-        <div class="option">Pencari Kos</div>
-        <div class="option">Pemilik Kos</div>
-        <p>Atau</p>
-        <div class="option">Daftar Akun Baru</div>
-        <p>Jika Anda sudah memiliki akun, silakan masuk dengan akun Anda.</p>
-        <form class="login-form">
-            <input type="text" placeholder="Email atau Nomor Telepon" required>
-            <input type="password" placeholder="Kata Sandi" required>
-            <button type="submit">Masuk</button>
-        </form>
-        <p class="forgot-password"><a href="#">Lupa Kata Sandi?</a></p>
+    <body class="bg-gray-100 font-sans">
+
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-xl rounded-xl p-10 w-full max-w-lg">
+      <h2 class="text-3xl font-bold text-center text-green-700 mb-6">Masuk KostKU</h2>
+      
+      <p class="text-center mb-4 text-gray-600">Saya ingin masuk sebagai</p>
+      <div class="flex flex-col space-y-3 mb-6">
+        <button class="bg-green-600 text-white py-2 rounded hover:bg-green-700">Pencari Kos</button>
+        <button class="bg-green-600 text-white py-2 rounded hover:bg-green-700">Pemilik Kos</button>
+      </div>
+
+      <div class="text-center text-gray-500 mb-4">atau</div>
+
+      <div class="text-center mb-6">
+        <a href="#" class="text-blue-600 hover:underline">Daftar Akun Baru</a>
+      </div>
+
+      <form>
+        <input type="text" placeholder="Email atau Nomor Telepon" class="w-full px-4 py-2 mb-4 border rounded focus:outline-none focus:ring-2 focus:ring-green-500"/>
+        <input type="password" placeholder="Kata Sandi" class="w-full px-4 py-2 mb-4 border rounded focus:outline-none focus:ring-2 focus:ring-green-500"/>
+        <button type="submit" class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">Masuk</button>
+      </form>
     </div>
-    
+  </div>
+    <footer class="bg-gray-800 text-white text-center py-4 mt-10">
     <footer class="footer">
             &copy; 2025 KostKU. All rights reserved.
     </footer>
