@@ -82,7 +82,7 @@ nav a {
     text-align: justify;
 }
 
-/* Masuk */
+/* beranda */
 
 .modal {
             background-color: white;
@@ -255,32 +255,7 @@ nav a {
 .detail-button:hover {
     background-color: #0056b3;
 }
-* {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #056614;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      color: #fff;
-    }
-
-    .logo img {
-      height: 60px;
-    }
+*
 
     nav ul {
       display: flex;
@@ -298,6 +273,7 @@ nav a {
       text-decoration: underline;
     }
 
+    /*profil*/
     .container {
       max-width: 900px;
       margin: 40px auto;
@@ -344,31 +320,44 @@ nav a {
     .contact a:hover {
       text-decoration: underline;
     }
+    
+    /*masuk*/
 
-    footer.footer {
-      background-color: #17252a;
-      color: white;
+    .conten {
+      max-width: 500px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      justify-content: center;
+    }
+
+    .login {
+      list-style:none;
+    }
+    .admin {
+      background: #058d17;
+      padding: 8px;
+      color: #ffffff;
       text-align: center;
-      padding: 20px;
-      font-size: 14px;
+      border-radius: 5px;
     }
 
-    @media (max-width: 600px) {
-      nav ul {
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-      }
-
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-      }
-
-      .container, .contact {
-        margin: 20px 10px;
-        padding: 20px;
-      }
+    .regis {
+      color:#024b99;
+      
     }
+      
+/*regis*/
+.conten h2 {
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
+.conten p {
+  color: #333;
+  text-align: center;
+}
+    
