@@ -1,25 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Kost</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      margin: 10px;
+      float: left;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #eee;
+      margin: 5px 5px 0 0;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+
+    .price {
+      color: green;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .btn-detail {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 100;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .modal-content {
+      background: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      width: 400px;
+      border-radius: 10px;
+    }
+
+    .modal-close {
+      float: right;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-        <img src="img/logo.png" width="120px">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="beranda.html" class="nav.link">Beranda</a></li>
-                <li><a href="profile.html" class="nav.link">Tentang Kami</a></li>
-                <li><a href="masuk.html" class="nav.link">Masuk</a></li>
-            </ul>
-        </nav>
-    </header>
 
+<<<<<<< HEAD
      <div class="search-bar">
             <input type="text" placeholder="Masukkan alamat kost...">
             <button type="submit">Cari</button>
@@ -29,3 +91,143 @@
     </div>
 
    
+=======
+<!-- Kartu Kos -->
+<div class="card">
+  <img src="img/tamplate.jpg" alt="Kos ABC">
+  <h3>Kos ABC Nyaman</h3>
+  <p>Jl. Mawar Indah No. 15, Jakarta Pusat</p>
+  <div class="tag">WiFi</div>
+  <div class="tag">Kasur</div>
+  <div class="tag">KM Dalam</div>
+  <div>
+    <br>deskripsi: "Kos ini cocok untuk pelajar dan mahasiswa.
+     Harga terjangkau, lingkungan tenang, dan fasilitas cukup lengkap. Dekat kampus UNDIP dan warung makan."
+  </div>
+</div>
+
+<div class="card">
+  <img src="img/tamplate 2.jpg" alt="Griya Kost DEF">
+  <h3>Griya Kost DEF</h3>
+  <p>Jl. Sudirman No. 20, Bandung</p>
+  <div class="tag">WiFi</div>
+  <div class="tag">Furnished</div>
+  <div class="tag">Meja Kursi</div>
+  <div class="tag">KM Dalam</div>
+  <div>
+    1.5 km dari Stasiun Bandung
+    2.4 Menit dari Universitas Padjadjaran
+    <br>Deskripsi: Kos ABC Nyaman cocok untuk pekerja maupun mahasiswa.
+    Lokasinya strategis dekat perkantoran dan mall. Kamar bersih dan dilengkapi perabotan lengkap.
+  </div>
+</div>
+
+<div class="card">
+  <img src="img/tamplate 3.jpg" alt="Kos GHI Harmoni">
+  <h3>Kos GHI Harmoni</h3>
+  <p>Jl. Pemuda No. 8, Yogyakarta</p>
+  <div class="tag">WiFi</div>
+  <div class="tag">KM Luar</div>
+  <div class="tag">Laundry</div>
+  <div>
+    <br>Deskripsi: Kos GHI Harmoni menawarkan kamar eksklusif dengan desain minimalis modern. 
+    Fasilitas lengkap dan lokasi hanya 5 menit dari kampus ITB dan Unpad.
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-10_wJbULxKPOd1-HelCMAnyn4rDAF_uFuQ&s" alt="Griya Kost DEF">
+  <h3>Kost Bintang Sambiroto</h3>
+  <p>Jl. Sambiroto No. 12, Semarang</p>
+  <div class="tag">WiFi</div>
+  <div class="tag">KM Luar</div>
+  <div class="tag">Kasur</div>
+  <div>
+    <br> deskripsi: Kos Bintang Sambiroto menyediakan pilihan hemat dengan kenyamanan maksimal.
+     Tersedia laundry, dapur bersama, dan area bersantai. Dekat halte TransJogja.
+  </div>
+</div>
+
+<div class="card">
+  <img src="img/desain-kamar-kos-1.webp" alt="Griya Kost DEF">
+  <h3>Kost Muslim</h3>
+  <p>Jl. Gemah Raya No. 11, Semarang</p>
+  <div class="tag">WiFi</div>
+  <div class="tag">KM Luar</div>
+  <div class="tag">Kasur</div>
+  <div>
+    <br>Deskripsi: Kost Muslim menyediakan kamar nyaman dengan fasilitas lengkap. 
+    Lokasi strategis dekat kampus UGM dan pusat perbelanjaan. Cocok untuk mahasiswa muslim.
+  </div>
+</div>
+
+<!-- Modal Detail -->
+<div id="kostModal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalAlamat"></p>
+    <p id="modalFasilitas"></p>
+    <p id="modalHarga" style="color:green;"></p>
+    <p><strong>Kontak:</strong> <span id="modalKontak"></span></p>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+  const dataKost = [
+    {
+      nama: "Kos ABC Nyaman",
+      alamat: "Jl. Mawar Indah No. 15, Jakarta Pusat",
+      fasilitas: "WiFi, Kasur, KM Dalam, AC, Meja",
+      harga: "Rp 1.500.000/bulan",
+      kontak: "0812-1234-5678"
+    },
+    {
+      nama: "Griya Kost DEF",
+      alamat: "Jl. Sudirman No. 20, Bandung",
+      fasilitas: "WiFi, Furnished, Meja Kursi, Lemari, Kamar Mandi Dalam",
+      harga: "Rp 1.800.000/bulan",
+      kontak: "0813-8765-4321"
+    },
+    {
+      nama: "Kos GHI Harmoni",
+      alamat: "Jl. Pemuda No. 8, Yogyakarta",
+      fasilitas: "WiFi, KM Luar, Laundry, Kipas Angin",
+      harga: "Rp 950.000/bulan",
+      kontak: "0814-3456-7890"
+    },
+    {
+      nama: "Kost Bintang Sambiroto",
+      alamat: "Jl. Sambiroto No. 12, Semarang",
+      fasilitas: "WiFi, KM Luar, Kasur, Lemari, Dapur Umum",
+      harga: "Rp 750.000/bulan",
+      kontak: "0815-6789-1234"
+    },
+    {
+      nama: "Kost Muslim",
+      alamat: "Jl. Gema Raya No. 11, Semarang",
+      fasilitas: "WiFi, KM Luar, Kasur,",
+      harga: "Rp 700.000/bulan",
+      kontak: "0815-11034-1234"
+    }
+  ];
+
+  function showDetail(index) {
+    const kost = dataKost[index];
+    document.getElementById("modalTitle").innerText = kost.nama;
+    document.getElementById("modalAlamat").innerText = kost.alamat;
+    document.getElementById("modalFasilitas").innerText = "Fasilitas: " + kost.fasilitas;
+    document.getElementById("modalHarga").innerText = kost.harga;
+    document.getElementById("modalKontak").innerText = kost.kontak;
+    document.getElementById("kostModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("kostModal").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
+>>>>>>> 8e1afd6fef2946426ed33d8f1e91329dd53522d9
