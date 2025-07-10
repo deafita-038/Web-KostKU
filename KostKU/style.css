@@ -351,8 +351,9 @@ nav a {
       
 /*regis*/
 .conten h2 {
-  color: #000000;
-  margin-bottom: 20px;
+  color: #2b7a78;
+  font-weight: bold;
+  font-size:20px;
   text-align: center;
 }
 
