@@ -1,178 +1,136 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daftar Kost</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    .card {
-      border: 1px solid #ddd;
-      padding: 20px;
-      border-radius: 10px;
-      width: 300px;
-      margin: 10px;
-      float: left;
-      background: #fff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 5px;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #eee;
-      margin: 5px 5px 0 0;
-      padding: 5px 10px;
-      border-radius: 20px;
-      font-size: 12px;
-    }
-
-    .price {
-      color: green;
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .btn-detail {
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    /* Modal */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 100;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.6);
-    }
-
-    .modal-content {
-      background: #fff;
-      margin: 10% auto;
-      padding: 20px;
-      width: 400px;
-      border-radius: 10px;
-    }
-
-    .modal-close {
-      float: right;
-      cursor: pointer;
-      font-size: 20px;
-    }
-  </style>
-</head>
-<body>
-
-<<<<<<< HEAD
-     <div class="search-bar">
-            <input type="text" placeholder="Masukkan alamat kost...">
-            <button type="submit">Cari</button>
-    </div>
-     <div class="box1">
-
-    </div>
-
-   
-=======
-<!-- Kartu Kos -->
-<div class="card">
-  <img src="img/tamplate.jpg" alt="Kos ABC">
-  <h3>Kos ABC Nyaman</h3>
-  <p>Jl. Mawar Indah No. 15, Jakarta Pusat</p>
-  <div class="tag">WiFi</div>
-  <div class="tag">Kasur</div>
-  <div class="tag">KM Dalam</div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BERANDA - KostKU</title>
+    <body>
+        <header>
+            <div class="logo">
+            <img src="img/logo.png" width="120px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="beranda.html" class="nav.link">Beranda</a></li>
+                    <li><a href="profile.html" class="nav.link">Tentang Kami</a></li>
+                    <li><a href="masuk.html" class="nav.link">Masuk</a></li>
+                </ul>
+            </nav>
+        </header>
+        <body>
   <div>
-    <br>deskripsi: "Kos ini cocok untuk pelajar dan mahasiswa.
-     Harga terjangkau, lingkungan tenang, dan fasilitas cukup lengkap. Dekat kampus UNDIP dan warung makan."
-  </div>
-</div>
-
-<!-- Modal Detail -->
-<div id="kostModal" class="modal">
-  <div class="modal-content">
-    <span class="modal-close" onclick="closeModal()">&times;</span>
-    <h3 id="modalTitle"></h3>
-    <p id="modalAlamat"></p>
-    <p id="modalFasilitas"></p>
-    <p id="modalHarga" style="color:green;"></p>
-    <p><strong>Kontak:</strong> <span id="modalKontak"></span></p>
-  </div>
-</div>
-
-<!-- JavaScript -->
-<script>
-  const dataKost = [
-    {
-      nama: "Kos ABC Nyaman",
-      alamat: "Jl. Mawar Indah No. 15, Jakarta Pusat",
-      fasilitas: "WiFi, Kasur, KM Dalam, AC, Meja",
-      harga: "Rp 1.500.000/bulan",
-      kontak: "0812-1234-5678"
-    },
-    {
-      nama: "Griya Kost DEF",
-      alamat: "Jl. Sudirman No. 20, Bandung",
-      fasilitas: "WiFi, Furnished, Meja Kursi, Lemari, Kamar Mandi Dalam",
-      harga: "Rp 1.800.000/bulan",
-      kontak: "0813-8765-4321"
-    },
-    {
-      nama: "Kos GHI Harmoni",
-      alamat: "Jl. Pemuda No. 8, Yogyakarta",
-      fasilitas: "WiFi, KM Luar, Laundry, Kipas Angin",
-      harga: "Rp 950.000/bulan",
-      kontak: "0814-3456-7890"
-    },
-    {
-      nama: "Kost Bintang Sambiroto",
-      alamat: "Jl. Sambiroto No. 12, Semarang",
-      fasilitas: "WiFi, KM Luar, Kasur, Lemari, Dapur Umum",
-      harga: "Rp 750.000/bulan",
-      kontak: "0815-6789-1234"
-    },
-    {
-      nama: "Kost Muslim",
-      alamat: "Jl. Gema Raya No. 11, Semarang",
-      fasilitas: "WiFi, KM Luar, Kasur,",
-      harga: "Rp 700.000/bulan",
-      kontak: "0815-11034-1234"
-    }
-  ];
-
-  function showDetail(index) {
-    const kost = dataKost[index];
-    document.getElementById("modalTitle").innerText = kost.nama;
-    document.getElementById("modalAlamat").innerText = kost.alamat;
-    document.getElementById("modalFasilitas").innerText = "Fasilitas: " + kost.fasilitas;
-    document.getElementById("modalHarga").innerText = kost.harga;
-    document.getElementById("modalKontak").innerText = kost.kontak;
-    document.getElementById("kostModal").style.display = "block";
-  }
-
-  function closeModal() {
-    document.getElementById("kostModal").style.display = "none";
-  }
-</script>
-
+    <br>
+       <nav class="breadcrumb">
+         <span>Detail</span>
+        <span>&gt;</span>
+        <span> Kost ABC Nyaman Jl. Mawar Indah No. 15, Jakarta Pusat</span>
+   </br>
+    </nav>
+    </div>
+  <main class="content-wrapper">
+        <section class="property-image-section">
+            <div class="image-gallery-container">
+                <div class="main-image-display">
+                    <img src="https://i.ibb.co/P442h9F/room-with-ac.jpg" alt="Room with AC">
+                </div>
+                </div>
+        </section>
+    </main>
 </body>
 </html>
->>>>>>> 8e1afd6fef2946426ed33d8f1e91329dd53522d9
+    <main class="detail-content-wrapper">
+        <div class="main-column">
+            <div class="image-gallery-section">
+                <div class="main-image">
+                    <img src="file:///C:/Users/hp/Downloads/3f3061da0736aff424b4e0b2963b2060.jpg" alt="Main Room Kost ABC Nyaman">
+                    <img src="file:///C:/Users/hp/Downloads/45ab6cc5fa24bf6552b9fc8b61b1024f.jpg" alt="Main Room Kost ABC Nyaman">
+                </div>
+                <div class="thumbnail-images">
+                    <img src="file:///C:/Users/hp/Downloads/7d93cfa68e14985f293aa3be5c4acb3f.jpg" alt="Exterior Kost 1">
+                    <img src="file:///C:/Users/hp/Downloads/0bf06ee1fae6ea26fea2d02b32250315.jpg" alt="Exterior Kost 2">
+                    <button class="view-all-photos">Lihat semua foto</button>
+                </div>
+            </div>
+            <div class="info-section basic-info">
+                <h1 class="listing-title">Kos ABC Nyaman</h1>
+                <div class="meta-info">
+                    <span class="location"><span class="icon">📍</span> Jl. Mawar Indah No. 15, Jakarta Pusat</span>
+                    <span class="rating"><span class="icon">⭐</span> 4.8</span>
+                    <span class="reviews">(6 transaksi berhasil di kos ini)</span>
+                    <span class="remaining-rooms"><span class="icon">🛏️</span> Tersisa 3 kamar</span>
+                </div>
+                <div class="actions-top">
+                    <button class="action-button"><span class="icon">💾</span> Simpan</button>
+                    <button class="action-button"><span class="icon">🔗</span> Bagikan</button>
+                </div>
+            </div>
+                <div class="profile-section">
+                <h3>Kos dikelola oleh Okta</h3>
+                <p class="manager-status">Online 5 jam lalu</p>
+                <div class="manager-avatar">
+                    <img src="file:///C:/Users/hp/Downloads/images.jfif" alt="Okta Avatar">
+                </div>
+            <div class="info-section room-specifications">
+                <h3>Spesifikasi tipe kamar</h3>
+                <ul>
+                    <li><span class="icon">Jenis Kamar🏨 :</span> Tipe B (AC)</li>
+                    <li><span class="icon">Ukuran Kamar📏 :</span> 3x3 meter</li>
+                    <li><span class="icon">Token Listrik💡 :</span> Sudah Termasuk</li>
+                </ul>
+            </div>
+                    <div class="info-section room-facilities">
+                <h3>Fasilitas kamar</h3>
+                <div class="facilities-grid">
+                    <span class="facility-item"><span class="icon">🛏️</span> Kasur,</span>
+                    <span class="facility-item"><span class="icon">❄</span> AC,</span>
+                    <span class="facility-item"><span class="icon">📚</span> Meja,</span>
+                    <span class="facility-item"><span class="icon">🗄</span> Lemari Baju,</span>
+                    <span class="facility-item"><span class="icon">🪟</span> Jendela,</span>
+                     <span class="facility-item"><span class="icon">🚽</span> Kamar Mandi Dalam.</span>
+                    </div>
+            </div>
+            <section class="facility-section">
+                <h3>Fasilitas kamar mandi </h3>
+                <div class="facility-items">
+                    <div class="facility-item">
+                        <i class="fas fa-toilet"></i>
+                        <span class="facility-item"><span class="icon">🚽</span> kloset duduk</span>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-bath"></i>
+                        <span class="facility-item"><span class="icon">🚿</span> sower</span>
+                    </div>
+                    <div class="facility-item facility-right">
+                        <span class="facility-item"><span class="icon">🚰</span> keran</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="rules-section">
+                    </div>
+                </div>
+            </section>
+
+            <section class="owner-story-section">
+                <h3>Cerita pemilik tentang kos ini</h3>
+                <p>
+                    Kost ini terdiri dari 2 lantai. Tipe kamar B berada di setiap lantainya dengan beberapa kamar
+                    memiliki jendela menghadap ke arah koridor
+                </p>
+            </section>
+
+            </div>
+
+        <aside class="sidebar-right">
+            <div class="price-box">
+                <p class="current-price">Rp. 1.500.00<span class="per-period">(Harga Bulanan)</span></p>
+            </div>
+            <div class="sidebar-actions">
+                <button class="action-btn contact-owner-btn"><span class="icon">💬</span> Hubungi Pemilik</button>
+                <button class="action-btn request-rental-btn"><span class="icon">✅</span> Ajukan Sewa</button>
+        </aside>
+    </main>
+</body>
+</html>
+
