@@ -23,97 +23,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Kost</title>
-    <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    .card {
-      border: 1px solid #ddd;
-      padding: 20px;
-      border-radius: 10px;
-      width: 300px;
-      margin: 10px;
-      float: left;
-      background: #fff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 5px;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #eee;
-      margin: 5px 5px 0 0;
-      padding: 5px 10px;
-      border-radius: 20px;
-      font-size: 12px;
-    }
-
-    .price {
-      color: green;
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .btn-detail {
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    /* Modal */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 100;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.6);
-    }
-
-    .modal-content {
-      background: #fff;
-      margin: 10% auto;
-      padding: 20px;
-      width: 400px;
-      border-radius: 10px;
-    }
-
-    .modal-close {
-      float: right;
-      cursor: pointer;
-      font-size: 20px;
-    }
-  </style>
+    <title>Document</title>
+  
+   
 </head>
 <body>
-    <div class="card">
-  <img src="img/tamplate 2.jpg" alt="Griya Kost DEF">
-  <h3>Griya Kost DEF</h3>
-  <p>Jl. Sudirman No. 20, Bandung</p>
-  <div class="tag">WiFi</div>
-  <div class="tag">Furnished</div>
-  <div class="tag">Meja Kursi</div>
-  <div class="tag">KM Dalam</div>
-  <div>
-    1.5 km dari Stasiun Bandung
-    2.4 Menit dari Universitas Padjadjaran
-    <br>Deskripsi: Kos ABC Nyaman cocok untuk pekerja maupun mahasiswa.
-    Lokasinya strategis dekat perkantoran dan mall. Kamar bersih dan dilengkapi perabotan lengkap.
-  </div>
-</div>
+    <div class="container">
+        <h1>Detail Kamar Kos</h1>
+
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('img/tamplate 2.jpg');"></div>
+            <div class="slide" style="background-image: url('img/wcdetail2.webp');"></div>
+            <div class="slide" style="background-image: url('img/detail2.jpeg');"></div>
+            <div class="slide" style="background-image: url('img/detail2parkir.jpg');"></div>
+
+            <div class="slider-nav">
+                <button class="prev">&#10094;</button> <button class="next">&#10095;</button> </div>
+        </div>
+
+        <div class="info-group">
+            <h2>Informasi Umum Kos</h2>
+            <p><strong>Nama Kos:</strong> Griya Kost DEF</p>
+            <p class="location">
+                <i class="fas fa-map-marker-alt"></i> 
+                <strong>Alamat:</strong> Jl.Fatmawati No.15, Kec.Tembalang, Semarang
+            </p>
+            <p class="price">Harga Kamar ini: Rp 600.000 / bulan</p>
+            <p><strong>Deskripsi Singkat:</strong>Kost nyaman dan strategis,parkiran luas cocok untuk mahasiswa maupun pekerja. Fasilitas lengkap seperti kamar mandi dalam, tempat tidur, lemari, meja belajar, serta akses WiFi dan dapur bersama. Lingkungan aman dan tenang, dekat dengan Unimus, Tempat kuliner, dan transportasi umum.</p>
+        </div>
+
+        <div class="info-group">
+            <h2>Fasilitas Kamar</h2>
+            <ul class="facilities-list">
+                <li><i class="fas fa-bed"></i> Kasur (Single)</li>
+                <li><i class="fas fa-wardrobe"></i> Lemari </li>
+                <li><i class="fas fa-desk"></i> Meja Belajar & Kursi</li>
+                <li><i class="fas fa-lightbulb"></i> Rak Sepatu</li>
+                <li><i class="fas fa-bath"></i> Kamar Mandi Dalam</li>
+            </ul>
+        </div>
+
+        <div class="info-group">
+            <h2>Fasilitas Umum Kos</h2>
+            <ul class="facilities-list">
+                <li><i class="fas fa-wifi"></i> WiFi </li>
+                <li><i class="fas fa-kitchen-set"></i> Dapur Bersama (Kompor, Kulkas, Peralatan Masak)</li>
+                <li><i class="fas fa-couch"></i> Ruang Tamu/Bersantai</li>
+                <li><i class="fas fa-motorcycle"></i> Parkir Motor </li>
+                <li><i class="fas fa-tint"></i> Air Bersih 24 Jam</li>
+                <li><i class="fas fa-cctv"></i> Akses dan CCTV Keamanan 24 Jam</li>
+            </ul>
+        </div>
+
+        <div class="contact-info">
+            <p>Untuk pemesanan atau informasi lebih lanjut, hubungi:</p>
+            <p><strong>Nama Pemilik:</strong> Ibu Endang</p>
+            <p>
+                <a href="tel:+6281234567890">
+                    <i class="fas fa-phone-alt"></i> 0857-8231-7508
+                </a>
+            </p>
+            <p>
+                <a href="https://wa.me/6281234567890" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Chat via WhatsApp
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+            });
+            slides[index].classList.add('active');
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentSlide--;
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            }
+            showSlide(currentSlide);
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentSlide++;
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+            showSlide(currentSlide);
+        });
+
+        // Tampilkan slide pertama saat halaman dimuat
+        showSlide(currentSlide);
+    </script>
 </body>
 </html>
