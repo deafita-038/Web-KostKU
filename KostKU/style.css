@@ -544,6 +544,7 @@ nav a {
                 font-size: 1.1em;
             }
         }
+<<<<<<< Updated upstream
 
 /*LOGIN*/
 
@@ -731,3 +732,14 @@ nav a {
         gap: 10px;
         align-items: flex-start;
     }
+=======
+        
+            ul, ol {
+                padding-left: 20px;
+                font-family: Arial, sans-serif;
+            }
+
+            li {
+                margin-bottom: 5px;
+            }
+>>>>>>> Stashed changes
