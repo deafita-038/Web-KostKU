@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>DETAIL - KostKU</title>
+    <title>BERANDA - KostKU</title>
     <body>
         <header>
             <div class="logo">
@@ -18,3 +18,111 @@
                 </ul>
             </nav>
         </header>
+        <body>
+<head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+   
+</head>
+<body>
+    <div class="container">
+        <h1>Detail Kamar Kos</h1>
+
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('img/detail6.webp');"></div>
+            <div class="slide" style="background-image: url('img/wcdetail6.jpg');"></div>
+            <div class="slide" style="background-image: url('img/parkiran6.jpg');"></div>
+            <div class="slide" style="background-image: url('img/dapur6.jpeg');"></div>
+
+            <div class="slider-nav">
+                <button class="prev">&#10094;</button> <button class="next">&#10095;</button> </div>
+        </div>
+
+        <div class="info-group">
+            <h2>Informasi Umum Kos</h2>
+            <p><strong>Nama Kos:</strong> Kos Melati</p>
+            <p class="location">
+                <i class="fas fa-map-marker-alt"></i> 
+                <strong>Alamat:</strong> Jl.Fatmawati No.17, Semarang
+            </p>
+            <p class="price">Harga Kamar ini: Rp 1.750.000 / bulan</p>
+            <p><strong>Deskripsi Singkat:</strong> Nikmati kenyamanan tinggal di kost eksklusif dengan desain modern dan fasilitas premium. Dilengkapi AC, kamar mandi dalam, laundry, dan keamanan 24 jam. Lokasi strategis, cocok untuk profesional muda.</p>
+        </div>
+
+        <div class="info-group">
+            <h2>Fasilitas Kamar</h2>
+            <ul class="facilities-list">
+                <li><i class="fas fa-bed"></i> Kasur (Double Bed)</li>
+                <li><i class="fas fa-wardrobe"></i> Lemari </li>
+                <li><i class="fas fa-desk"></i> Meja Belajar & Kursi</li>
+                <li><i class="fas fa-lightbulb"></i> Lampu Penerangan & Meja</li>
+                <li><i class="fas fa-bath"></i> Kamar Mandi Dalam</li>
+            </ul>
+        </div>
+
+        <div class="info-group">
+            <h2>Fasilitas Umum Kos</h2>
+            <ul class="facilities-list">
+                <li><i class="fas fa-wifi"></i> WiFi </li>
+                <li><i class="fas fa-kitchen-set"></i> Dapur Bersama (Kompor, Kulkas, Peralatan Masak)</li>
+                <li><i class="fas fa-couch"></i> Ruang Tamu/Bersantai</li>
+                <li><i class="fas fa-motorcycle"></i> Parkir Motor </li>
+                <li><i class="fas fa-tint"></i> Air Bersih 24 Jam</li>
+                <li><i class="fas fa-cctv"></i> CCTV Keamanan 24 Jam</li>
+            </ul>
+        </div>
+
+        <div class="contact-info">
+            <p>Untuk pemesanan atau informasi lebih lanjut, hubungi:</p>
+            <p><strong>Nama Pemilik:</strong> Ibu Sinta</p>
+            <p>
+                <a href="tel:+6281234567890">
+                    <i class="fas fa-phone-alt"></i> 📞0812-4653-9764
+                </a>
+            </p>
+            <p>
+                <a href="https://wa.me/6281234567890" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Chat via WhatsApp
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+            });
+            slides[index].classList.add('active');
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentSlide--;
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            }
+            showSlide(currentSlide);
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentSlide++;
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+            showSlide(currentSlide);
+        });
+
+        // Tampilkan slide pertama saat halaman dimuat
+        showSlide(currentSlide);
+    </script>
+</body>
+
+</html>
