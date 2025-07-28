@@ -18,3 +18,120 @@
                 </ul>
             </nav>
         </header>
+         <div class="container">
+        <h1>Detail Kamar Kos</h1>
+
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('img/gemahjayakost.jpg');"></div>
+            <div class="slide" style="background-image: url('img/gemahjayakostkm.jpg');"></div>
+            <div class="slide" style="background-image: url('img/gemahjayakostb.jpg');"></div>
+            <div class="slide" style="background-image: url('img/parkirdetail4.jpg');"></div>
+
+            <div class="slider-nav">
+                <button class="prev">&#10094;</button> <button class="next">&#10095;</button> </div>
+        </div>
+
+        <div class="info-group">
+            <h2>Informasi Umum Kos</h2>
+            <p><strong>Nama Kos:</strong> Gemah Jaya Kost (Putri)</p>
+            <p class="location">
+                <i class="fas fa-map-marker-alt"></i> 
+                <strong>Alamat:</strong> Jl. Gemah Jaya IV No.15, Perum Kinijaya, Kedumgmundu, Kec.Tembalang, Semarang
+            </p>
+            <p class="price">Harga Mulai Dari: Rp 800.000 / bulan</p>
+            <p><strong>Deskripsi Singkat:</strong> Kost ideal untuk mahasiswa! Dekat kampus, tersedia kamar AC & Non AC. Lingkungan aman dan banyak tempat makan murah di sekitar.</p>
+        </div>
+
+        <div class="info-group">
+            <h2>Fasilitas Kamar</h2>
+            <ul class="facilities-list">
+                <li><i class="fas fa-bed"></i> Kasur (Single)</li>
+                <li><i class="fas fa-wardrobe"></i> Lemari </li>
+                <li><i class="fas fa-desk"></i> Meja Belajar & Kursi</li>
+                <li><i class="fas fa-fan"></i> Kipas Angin</li>
+                <li><i class="fas fa-lightbulb"></i> Listrik</li>
+                <li><i class="fas fa-bath"></i> Kamar Mandi Dalam</li>
+                <li><i class="fas fa-tshirt"></i> Tempat Jemur Pakaian</li>
+            </ul>
+        </div>
+
+        <div class="info-group">
+            <h2>Fasilitas Umum Kos</h2>
+            <ul class="facilities-list">
+                <li><i class="fas fa-wifi"></i> WiFi </li>
+                <li><i class="fas fa-kitchen-set"></i> Dapur Bersama (Kompor, Kulkas, Peralatan Masak)</li>
+                <li><i class="fas fa-couch"></i> Ruang Tamu/Bersantai</li>
+                <li><i class="fas fa-motorcycle"></i> Parkir Motor Luas</li>
+                <li><i class="fas fa-car"></i> Parkir Mobil (Terbatas, konfirmasi dulu)</li>
+                <li><i class="fas fa-tint"></i> Air Bersih 24 Jam</li>
+                <li><i class="fas fa-cctv"></i> CCTV Keamanan 24 Jam</li>
+            </ul>
+        </div>
+
+        <div class="contact-info">
+            <p>Untuk pemesanan atau informasi lebih lanjut, hubungi:</p>
+            <p><strong>Nama Pemilik:</strong> Bapak Hari</p>
+            <p>
+                <a href="tel:+6281234567890">
+                    <i class="fas fa-phone-alt"></i> 0812-3456-7560
+                </a>
+            </p>
+            <p>
+                <a href="https://wa.me/6281234567890" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Chat via WhatsApp
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+            });
+            slides[index].classList.add('active');
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentSlide--;
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            }
+            showSlide(currentSlide);
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentSlide++;
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+            showSlide(currentSlide);
+        });
+
+        // Tampilkan slide pertama saat halaman dimuat
+        showSlide(currentSlide);
+    </script>
+
+    <footer class="footer">
+            &copy; 2025 KostKU. All rights reserved.
+        </footer>
+    
+        <script>
+            // Javascript untuk fitur pencarian (akan diimplementasikan lebih lanjut)
+            const searchInput = document.querySelector('.search-bar input[type="text"]');
+            const searchButton = document.querySelector('.search-bar button');
+    
+            searchButton.addEventListener('click', function() {
+                const alamat = searchInput.value;
+                alert(`Fitur pencarian untuk alamat: ${alamat} akan segera hadir!`);
+               
+            });
+        </script>
+
+</body>
+</html>
