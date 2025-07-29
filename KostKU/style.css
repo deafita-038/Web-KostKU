@@ -321,33 +321,6 @@ nav a {
       text-decoration: underline;
     }
     
-    /*masuk*/
-
-    .conten {
-      max-width: 500px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      justify-content: center;
-    }
-
-    .login {
-      list-style:none;
-    }
-    .admin {
-      background: #058d17;
-      padding: 8px;
-      color: #ffffff;
-      text-align: center;
-      border-radius: 5px;
-    }
-
-    .regis {
-      color:#024b99;
-      
-    }
       
 
 /*detail*/
@@ -544,7 +517,6 @@ nav a {
                 font-size: 1.1em;
             }
         }
-<<<<<<< Updated upstream
 
 /*LOGIN*/
 
@@ -554,7 +526,7 @@ nav a {
     align-items: center;
     width: 100%;
     max-width: 400px; /* Lebar maksimal box login */
-    margin: 20px;
+    margin: 0 auto;
 }
 
 .login-box {
@@ -577,8 +549,7 @@ nav a {
     display: block; 
 }
 
-/* Jika menggunakan gambar untuk icon kunci */
-/*
+
 .key-icon {
     width: 70px;
     height: 70px;
@@ -732,14 +703,27 @@ nav a {
         gap: 10px;
         align-items: flex-start;
     }
-=======
         
-            ul, ol {
-                padding-left: 20px;
-                font-family: Arial, sans-serif;
-            }
+ul, ol {
+        padding-left: 20px;
+        font-family: Arial, sans-serif;
+    }
 
-            li {
-                margin-bottom: 5px;
-            }
->>>>>>> Stashed changes
+li {
+    margin-bottom: 5px;
+    }
+
+/*lupa password*/
+.description-text {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    padding: 0 10px; 
+}
+
+
+.input-group label i {
+    margin-right: 8px;
+    color: #9b59b6; 
+}
