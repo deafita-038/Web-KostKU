@@ -19,46 +19,48 @@
                 </ul>
             </nav>
         </header>
-        <div class="login-container"> <div class="login-box"> <div class="login-header">
-                <i class="fas fa-user-plus key-icon"></i>
-                <h2>Register</h2>
-            </div>
+        
+        <div class="login-container"> 
+            <div class="login-box"> 
+                <div class="login-header">
+                        <h2>Daftar</h2>
+                </div>
             
             <form action="proses_register.php" method="POST">
                 <div class="input-group">
-                    <label for="full_name"><i class="fas fa-user"></i> Full Name</label>
-                    <input type="text" id="full_name" name="full_name" placeholder="Enter your full name" required>
+                    <label for="full_name"><i class="fas fa-user"></i> Nama Lengkap</label>
+                    <input type="text" id="full_name" name="full_name" placeholder="Masukkan nama lengkap" required>
                 </div>
 
                 <div class="input-group">
                     <label for="email"><i class="fas fa-envelope"></i> Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <input type="email" id="email" name="email" placeholder="Masukkan alamat email" required>
                 </div>
                 
                 <div class="input-group">
                     <label for="password"><i class="fas fa-lock"></i> Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter password (min. 6 chars)" required>
+                    <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" required>
                 </div>
 
                 <div class="input-group">
-                    <label for="confirm_password"><i class="fas fa-lock"></i> Confirm Password</label>
-                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Re-enter password" required>
+                    <label for="confirm_password"><i class="fas fa-lock"></i> Ulangi Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Masukkan kembali password" required>
                 </div>
 
                 <div class="input-group">
-                    <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="e.g., 081234567890" required>
+                    <label for="phone"><i class="fas fa-phone"></i> Nomor Handphone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Isi dengan nomor handphone aktif" required>
                 </div>
 
                 <div class="options-group checkbox-group">
                     <input type="checkbox" id="terms_agreement" name="terms_agreement" required>
-                    <label for="terms_agreement">I agree to the <a href="#">Terms & Conditions</a></label>
+                    <label for="terms_agreement"> Saya setuju dengan <a href="#"> Syarat & Ketentuan</a></label>
                 </div>
                 
-                <button type="submit" class="btn-submit">REGISTER</button>
+                <button type="submit" class="btn-submit">DAFTAR</button>
             </form>
             
-            <div class="register-prompt"> Already a member? <a href="masuk.html">Login Now</a>
+            <div class="register-prompt"> Sudah punya akun? <a href="masuk.html">Masuk di sini</a>
             </div>
         </div>
     </div>
