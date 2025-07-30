@@ -169,8 +169,7 @@ nav a {
 }
 
 .kos-type.putra { background-color: #007bff; } 
-.kos-type.putri { background-color: #dc3545; }
-.kos-type.campur { background-color: #ffc107; color: #333;} 
+.kos-type.putri { background-color: #0000FF; }
 
 .kos-info {
     padding: 12px;
