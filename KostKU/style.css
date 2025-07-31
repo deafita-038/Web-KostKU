@@ -170,7 +170,7 @@ nav a {
 
 .kos-type.putra { background-color: #007bff; } 
 .kos-type.putri { background-color: #FF0000; }
-.kos-type.campur { background-color: #ffc107; } 
+
 
 .kos-info {
     padding: 12px;
@@ -669,6 +669,7 @@ nav a {
         gap: 10px;
         align-items: flex-start;
     }
+}
         
 ul, ol {
         padding-left: 20px;
